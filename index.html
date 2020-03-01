@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opera 67.0.3575.31 crash example</title>
+    <style>
+        .visually-hidden {
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            position: absolute; /* float: left; also causes crash */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead class="visually-hidden">
+            <tr>
+                <th>Color</th>
+                <th>Shape</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Red</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
